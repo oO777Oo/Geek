@@ -4,6 +4,8 @@ import org.w3c.dom.ls.LSOutput;
 
 public class Main {
     public static void main(String[] args) {
+        // Home Work lesson 1:
+
         // Problem 2
         boolean student = true;
 

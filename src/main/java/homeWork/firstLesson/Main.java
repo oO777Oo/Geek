@@ -61,10 +61,14 @@ public class Main {
 
     /* Problem 8 */
     static void  checkLeapYear(int year) {
-        if (year % 4 != 0 || (year % 100 == 0 && year % 400 != 0)) {
-            System.out.println("не високосный");
-        } else {
+        if (year % 400 == 0) {
             System.out.println("високосный");
+        } else if (year % 100 == 0) {
+            System.out.println("не високосный");
+        } else if(year % 4 == 0) {
+            System.out.println("високосный");
+        } else {
+            System.out.println("не високосный");
         }
     }
 }

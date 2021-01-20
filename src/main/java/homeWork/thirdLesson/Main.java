@@ -66,5 +66,6 @@ public class Main {
             counter ++;
         } while (!word.equals(guessWord));
         System.out.println("Congrats you guess! Your score is " + counter + " and word is: " + guessWord);
+        buffer.close();
     }
 }

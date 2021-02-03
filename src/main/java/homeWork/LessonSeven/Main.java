@@ -11,7 +11,7 @@ public class Main {
         /* while cats eat capacity is incremented (1+2+3+...)
            i used as a parameter formula 1+2+3+...n-1+n = n(n+1) / 2;
          */
-        plate.fillThePlate(20);
+        plate.fillThePlate((catsList.length * (catsList.length + 1)) / 2);
         for (Cat cat : catsList) {
             cat.eat(plate);
         }

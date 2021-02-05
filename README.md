@@ -14,4 +14,4 @@
 
 [Lesson six](src/main/java/homeWork/LessonSix/)
 
-[Lesson seven](src/main/kava/homeWork/LessonSeven/)
+[Lesson seven](src/main/java/homeWork/LessonSeven/)

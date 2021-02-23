@@ -1,5 +1,4 @@
-# GeekBrains course 
-___
+# GeekBrains course ___
 
 ## *Classes:*
 

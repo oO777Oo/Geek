@@ -7,3 +7,6 @@
 [Lesson two](LessonTwo/)
 
 [Lesson three](LessonThree/)
+
+[Lesson four](LessonFour/)
+

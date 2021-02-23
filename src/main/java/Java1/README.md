@@ -16,4 +16,4 @@
 
 [Lesson seven](src/main/java/Java1/LessonSeven/)
 
-### [Link to certificate](https://geekbrains.ru/certificates/1132651.en)
+### [Link to certificate: (You will jump to certification link)](https://geekbrains.ru/certificates/1132651.en) 

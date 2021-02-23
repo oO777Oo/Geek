@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Random;
+
 /**
  * Important Point input need be 11 21 22 for example because x and y will be calculated:
  * for example:
@@ -11,7 +12,7 @@ import java.util.Random;
  * 21 first '2' is for X and second '1' is for Y
  * 32 means x = 3 , y = 2 -> algorithm calculated alone from number 32 x and y.
  * Input must be concatenated in one integer.
- * */
+ */
 public class Main {
     public static void main(String[] args) {
         startGame();
@@ -107,42 +108,42 @@ public class Main {
 
 
             if (matrix[i][i] == 'X') { // check diagonal left -> right
-                diagonalCheckLeft --;
+                diagonalCheckLeft--;
             } else if (matrix[i][i] == '•') { // check diagonal left -> right for neutral point
                 checkNeutralDiagonalLeft--;
             } else {
-                diagonalCheckLeft ++; // means there is a 'O' it's mean match streak is broke
+                diagonalCheckLeft++; // means there is a 'O' it's mean match streak is broke
             }
 
             // The same condition like diagonal left -> right but for right -> left
             if (matrix[i][matrix.length - (i + 1)] == 'X') {
-                diagonalCheckRight --;
+                diagonalCheckRight--;
             } else if (matrix[i][matrix.length - (i + 1)] == '•') {
-                checkNeutralDiagonalRight --;
+                checkNeutralDiagonalRight--;
             } else {
-                diagonalCheckRight ++;
+                diagonalCheckRight++;
             }
 
             for (int j = 0; j < matrix.length; j++) {
                 // I check Vertical and Horizontal in one loop directly to reduce time and redundant
                 if (matrix[i][j] == 'X') { // horizontal check
-                    horizontalCheck --;
+                    horizontalCheck--;
                 } else if (matrix[i][j] == '•') {
-                    checkNeutralHorizontal --;
+                    checkNeutralHorizontal--;
                     coordinatesG[0] = i; // insert coordinates
                     coordinatesG[1] = j; // insert coordinates
                 } else {
-                    horizontalCheck ++; // streak broke
+                    horizontalCheck++; // streak broke
                 }
 
                 if (matrix[j][i] == 'X') { // Vertical check the same like horizontal
-                    verticalCheck --;
+                    verticalCheck--;
                 } else if (matrix[j][i] == '•') {
-                    checkNeutralVertical --;
+                    checkNeutralVertical--;
                     coordinatesV[0] = j;
                     coordinatesV[1] = i;
                 } else {
-                    verticalCheck ++;
+                    verticalCheck++;
                 }
 
                 if (horizontalCheck == 0 && checkNeutralHorizontal == 0) { // Control if horizontalCheck is 0 means on line [i] are 2 times X
@@ -162,7 +163,7 @@ public class Main {
                 return new int[]{-1, 1}; // -1 and 0 show that [0] = -1 means diagonal [1] = 1 shows right -> left
             }
         }
-        return new int[]{-1,-1}; // it's not danger situation
+        return new int[]{-1, -1}; // it's not danger situation
     }
 
     private static int[] humanStep(char[][] matrix) {
@@ -342,8 +343,8 @@ public class Main {
 
             if (matrix[i][i] == initX) {
                 diagonalConditionL--;
-            } else if ( matrix[i][i] == initY) {
-                diagonalConditionLY --;
+            } else if (matrix[i][i] == initY) {
+                diagonalConditionLY--;
             }
 
             if (matrix[i][matrix.length - (i + 1)] == initX) {

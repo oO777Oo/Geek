@@ -15,12 +15,12 @@ public class Cat {
             while (true) {
                 System.out.println("Insert new value bigger than 0: ");
                 try {
-                    int newCapacity =Integer.parseInt(new BufferedReader(new InputStreamReader(System.in)).readLine());
+                    int newCapacity = Integer.parseInt(new BufferedReader(new InputStreamReader(System.in)).readLine());
                     if (newCapacity > 0) {
                         this.eatCapacity = newCapacity;
                         break;
                     }
-                } catch (IOException | NumberFormatException e ) {
+                } catch (IOException | NumberFormatException e) {
 
                     System.out.println("Write please a number not a character");
                 }
@@ -30,10 +30,10 @@ public class Cat {
         }
     }
 
-    public void eat (Plate plate) {
+    public void eat(Plate plate) {
         if (plate.getEssenCapacity() > this.eatCapacity) {
-           plate.setEssenCapacity(plate.getEssenCapacity() - this.eatCapacity);
-           this.isHungry = false;
+            plate.setEssenCapacity(plate.getEssenCapacity() - this.eatCapacity);
+            this.isHungry = false;
         }
     }
 

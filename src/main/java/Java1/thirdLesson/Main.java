@@ -16,17 +16,17 @@ public class Main {
         int guessNumber = new Random().nextInt(10);
         do {
             System.out.println("Input your guess Number:");
-            for(int i = 0; i < 3; i++) {
+            for (int i = 0; i < 3; i++) {
                 int input = Integer.parseInt(buffer.readLine());
-                if(guessNumber == input) {
+                if (guessNumber == input) {
                     System.out.println("You win, Congrats!");
                     System.out.println("Do you want to repeat?(1/0): ");
                     break;
-                } else if(guessNumber > input && i < 2) {
+                } else if (guessNumber > input && i < 2) {
                     System.out.println("Your number is smaller! you have " + (3 - (i + 1)) + " chances");
                 } else {
                     System.out.println("Your number is bigger! you have " + (3 - (i + 1)) + " chances");
-                    if(i == 2) {
+                    if (i == 2) {
                         System.out.println("You lose!");
                         System.out.println("Do you want to repeat?(1/0): ");
                     }
@@ -63,7 +63,7 @@ public class Main {
                     }
                 }
             }
-            counter ++;
+            counter++;
         } while (!word.equals(guessWord));
         System.out.println("Congrats you guess! Your score is " + counter + " and word is: " + guessWord);
         buffer.close();

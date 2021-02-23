@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Cat[] catsList = new Cat[20];
         for (int i = 0; i < catsList.length; i++) {
-           catsList[i] = new Cat(i+1);
+            catsList[i] = new Cat(i + 1);
         }
 
         Plate plate = new Plate();

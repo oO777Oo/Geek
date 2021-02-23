@@ -21,9 +21,10 @@ public class Main {
 
         phoneBook.get("Vlad");
     }
+
     public static void printArraysValuesWithNoRepetition(List<String> arr) {
         Map<String, Integer> data = new HashMap<String, Integer>();
-        for(String str: arr) {
+        for (String str : arr) {
             if (data.containsKey(str)) {
                 data.put(str, data.get(str) + 1);
             } else {

@@ -22,7 +22,7 @@ public class Main {
         // =========================
 
         System.out.println(mathematicsCalculation(10.0F, 20.0F, 60.0F, 30.0F));
-        System.out.println(control10Diapason20(10,5));
+        System.out.println(control10Diapason20(10, 5));
         positiveControlNumber(15);
         System.out.println(negativeControlNumber(-5));
         helloName("Vladislav");
@@ -36,13 +36,13 @@ public class Main {
     }
 
     /* Problem 4 */
-    static boolean control10Diapason20(int a , int b) {
+    static boolean control10Diapason20(int a, int b) {
         return a + b >= 10 && a + b <= 20;
     }
 
     /* Problem 5 */
     static void positiveControlNumber(int number) {
-        if(number >= 0) {
+        if (number >= 0) {
             System.out.println("положительное число");
         } else {
             System.out.println("отрицательное число");
@@ -55,17 +55,17 @@ public class Main {
     }
 
     /* Problem 7 */
-    static void helloName (String name) {
+    static void helloName(String name) {
         System.out.println("Привет, " + name + "!");
     }
 
     /* Problem 8 */
-    static void  checkLeapYear(int year) {
+    static void checkLeapYear(int year) {
         if (year % 400 == 0) {
             System.out.println("високосный");
         } else if (year % 100 == 0) {
             System.out.println("не високосный");
-        } else if(year % 4 == 0) {
+        } else if (year % 4 == 0) {
             System.out.println("високосный");
         } else {
             System.out.println("не високосный");

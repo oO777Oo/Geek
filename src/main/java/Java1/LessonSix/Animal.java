@@ -4,7 +4,7 @@ public abstract class Animal {
     private static int animalCounter = 0;
 
     public Animal() {
-        animalCounter ++;
+        animalCounter++;
     }
 
     public abstract void run(int distance);

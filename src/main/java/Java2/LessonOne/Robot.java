@@ -4,7 +4,8 @@ public class Robot implements Actions {
     private int maxRunDistance = 500;
     private int maxHeight = 200;
 
-    public Robot() {}
+    public Robot() {
+    }
 
     public Robot(int maxRunDistance, int maxHeight) {
         this.maxRunDistance = maxRunDistance;
@@ -26,7 +27,7 @@ public class Robot implements Actions {
 
     @Override
     public int jump(int height) {
-        if(this.maxHeight >= height) {
+        if (this.maxHeight >= height) {
             System.out.println("Robot jump this height!");
             return 1;
         } else {

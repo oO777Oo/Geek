@@ -1,6 +1,6 @@
 package Java2.LessonOne;
 
-public class Cat implements Actions{
+public class Cat implements Actions {
 
     private int maxRunDistance = 20;
     private int maxJumpHeight = 50;
@@ -16,7 +16,7 @@ public class Cat implements Actions{
 
     @Override
     public int run(int distance) {
-        if(this.maxRunDistance >= distance) {
+        if (this.maxRunDistance >= distance) {
             System.out.println("Cat run this distance!");
             return 1;
         } else {
@@ -28,7 +28,7 @@ public class Cat implements Actions{
 
     @Override
     public int jump(int height) {
-        if(this.maxJumpHeight >= height) {
+        if (this.maxJumpHeight >= height) {
             System.out.println("Cat jump this height!");
             return 1;
         } else {

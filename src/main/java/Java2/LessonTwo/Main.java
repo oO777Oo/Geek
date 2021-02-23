@@ -38,7 +38,7 @@ public class Main {
                 return false;
             }
         } else {
-            for(int i = 0; i < matrix.length; i++) {
+            for (int i = 0; i < matrix.length; i++) {
                 if (matrix[i].length != 4) {
                     try {
                         throw new MyArraySizeException(" My array size exception ");

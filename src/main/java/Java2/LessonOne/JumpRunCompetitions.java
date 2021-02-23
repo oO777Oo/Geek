@@ -26,12 +26,12 @@ public class JumpRunCompetitions {
     }
 
     public void startCompetition() {
-        for (Actions actions: participantsList) {
+        for (Actions actions : participantsList) {
             if (actions == null) {
                 System.out.println("All participants take part of competition");
                 break;
             }
-            for (Obstacle obstacle: obstaclesList) {
+            for (Obstacle obstacle : obstaclesList) {
                 int ans;
 
                 if (obstacle == null) {
@@ -45,7 +45,7 @@ public class JumpRunCompetitions {
                 } else {
                     ans = actions.run(((RunningTrack) obstacle).getDistance());
                 }
-                if(ans == 0) {
+                if (ans == 0) {
                     break;
                 }
             }

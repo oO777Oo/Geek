@@ -9,19 +9,17 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(search(2, new Integer[]{1,2,3,4}));
+        System.out.println(search(2, new Integer[]{1, 2, 3, 4}));
         System.out.println(reverse("Vlad"));
-        System.out.println(maximum(new Integer[]{1,4,3,2}));
-        System.out.println(average(new ArrayList<>(Arrays.asList(1,2,3,4,5))));
+        System.out.println(maximum(new Integer[]{1, 4, 3, 2}));
+        System.out.println(average(new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5))));
         System.out.println(search(new ArrayList<>(Arrays.asList("abc", "op", "home", "ato", "bac"))));
     }
 
 
-
-
     public static int search(Integer n, Integer[] arr) {
         Search search1 = (s, list) -> list.length > s ? list[s] : -1;
-        return search1.search(n,arr);
+        return search1.search(n, arr);
     }
 
     public static String reverse(String s) {
@@ -34,7 +32,7 @@ public class Main {
                     char current = str[start];
                     str[start] = str[str.length - 1 - start];
                     str[str.length - 1 - start] = current;
-                    start ++;
+                    start++;
                 }
                 return new String(str);
             }
@@ -53,9 +51,9 @@ public class Main {
 
     public static Double average(List<Integer> list) {
         Average foo = (a, b) -> a / b;
-        BiggerOrSmaller sumLambda = (a,b) -> a+b;
+        BiggerOrSmaller sumLambda = (a, b) -> a + b;
         int sum = 0;
-        for (Integer number: list) {
+        for (Integer number : list) {
             sum = sumLambda.max(sum, number);
         }
         return foo.average(sum, list.size());
@@ -66,9 +64,9 @@ public class Main {
             @Override
             public List<String> condition(List<String> s) {
                 List<String> ans = new ArrayList<>();
-                for(String str: s) {
+                for (String str : s) {
                     if (str.length() == 3 && str.charAt(0) == 97) {
-                       ans.add(str);
+                        ans.add(str);
                     }
                 }
                 return ans;

@@ -1,11 +1,11 @@
 package Java1.LessonSix;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
     private static int dogCounter = 0;
 
     public Dog() {
         super();
-        dogCounter ++;
+        dogCounter++;
     }
 
     public static int getDogCounter() {

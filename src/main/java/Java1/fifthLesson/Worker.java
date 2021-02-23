@@ -1,4 +1,4 @@
-package homeWork.fifthLesson;
+package Java1.fifthLesson;
 
 public class Worker {
     private String name;

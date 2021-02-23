@@ -1,4 +1,4 @@
-package homeWork.LessonSeven;
+package Java1.LessonSeven;
 
 import java.io.BufferedReader;
 import java.io.IOException;

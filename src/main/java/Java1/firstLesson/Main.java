@@ -1,4 +1,4 @@
-package homeWork.firstLesson;
+package Java1.firstLesson;
 
 import org.w3c.dom.ls.LSOutput;
 

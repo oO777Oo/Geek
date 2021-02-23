@@ -1,4 +1,4 @@
-package homeWork.LessonSix;
+package Java1.LessonSix;
 
 public class Cat extends Animal{
     private static int catCounter = 0;

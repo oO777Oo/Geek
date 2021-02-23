@@ -1,4 +1,4 @@
-package homeWork.LessonSix;
+package Java1.LessonSix;
 
 public abstract class Animal {
     private static int animalCounter = 0;

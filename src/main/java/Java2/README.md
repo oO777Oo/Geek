@@ -2,8 +2,8 @@
 
 ### Homework
 
-[Lesson one](src/main/java/Java2/LessonOne/)
+[Lesson one](LessonOne/)
 
-[Lesson two](src/main/java/Java2/LessonTwo/)
+[Lesson two](LessonTwo/)
 
-[Lesson three](src/main/java/Java2/LessonThree/)
+[Lesson three](LessonThree/)

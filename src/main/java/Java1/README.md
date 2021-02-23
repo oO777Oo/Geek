@@ -1,17 +1,15 @@
-# Geek Java 1
+# Geek
 
 ### Homework
 
-[Lesson one](src/main/java/Java1/firstLesson/Main.java)
+[Lesson one](src/main/java/homeWork/firstLesson/Main.java)
 
-[Lesson two](src/main/java/Java1/secondLesson/Main.java)
+[Lesson two](src/main/java/homeWork/secondLesson/Main.java)
 
-[Lesson three](src/main/java/Java1/thirdLesson/Main.java)
+[Lesson three](src/main/java/homeWork/thirdLesson/Main.java)
 
-[Lesson four](src/main/java/Java1/fourthLesson/Main.java)
+[Lesson four](src/main/java/homeWork/fourthLesson/Main.java)
 
-[Lesson five](src/main/java/Java1/fifthLesson/)
+[Lesson five](src/main/java/homeWork/fifthLesson/)
 
-[Lesson six](src/main/java/Java1/LessonSix/)
-
-[Lesson seven](src/main/java/Java1/LessonSeven/)
+### [Link to certificate](https://geekbrains.ru/certificates/1132651.en)

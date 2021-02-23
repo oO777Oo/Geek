@@ -12,4 +12,4 @@
 
 [Lesson five](src/main/java/homeWork/fifthLesson/)
 
-### [Certification](https://geekbrains.ru/certificates/1132651.en)
+### [Link to certificate](https://geekbrains.ru/certificates/1132651.en)

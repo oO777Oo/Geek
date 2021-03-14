@@ -1,0 +1,108 @@
+.header_structure {
+    border: 5px solid purple;
+
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header_structure:last-child {
+    border: 5px solid purple;
+    height: 650px;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu_struct_title {
+    border: 5px solid purple;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu {
+    border: 5px solid green;
+    background-color: #2222;
+    margin-top: 35px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.title {
+    border: 5px solid blue;
+    width: 380px;
+    height: 380px;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu__link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.menu_link:hover {
+    color: #0F0;
+    background-color: silver;
+    overflow: hidden;
+}
+
+.menu__list {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    float: left;
+    overflow: hidden;
+}
+
+.contacts {
+    margin: 68px;
+    color: black;
+}
+
+.message {
+    height: 80px;
+    overflow: hidden;
+    color: black;
+}
+
+.message:last-child {
+    height: 180px;
+
+}
+
+.message_pool {
+    width: 250px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.message:last-child {
+    height: 120px;
+}
+
+.message_content {
+    width: 250px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.menu__list:last-child {
+    margin-left: 155px;
+}

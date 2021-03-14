@@ -1,0 +1,102 @@
+.header {
+    height: 1000px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header_structure {
+    border: 5px solid purple;
+    height: 990px;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu {
+    border: 5px solid green;
+    background-color: #2222;
+    margin-top: 35px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.title {
+    border: 5px solid blue;
+    width: 370px;
+    height: 370px;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu__link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.menu_link:hover {
+    color: #0F0;
+    background-color: silver;
+    overflow: hidden;
+}
+
+.menu__list {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    float: left;
+    overflow: hidden;
+}
+
+.header_structure_title {
+    padding-left: 500px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.second_title {
+    color: black;
+}
+
+.header_structur {
+    border: 5px solid purple;
+    height: 250px;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bottom {
+    border: 5px solid purple;
+    height: 450px;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bottom_structure {
+    border: 5px solid blue;
+    width: 350px;
+    height: 350px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bottom:last-child {
+    height: 200px;
+}

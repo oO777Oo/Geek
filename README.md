@@ -7,9 +7,9 @@ ___
 
 ### &nbsp; &nbsp; &nbsp; &nbsp; *Java* :mortar_board:
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; • *[Java 1](src/main/java/Java1/)* :heavy_check_mark:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; • *[Java 1](src/main/java/Java1/)* :heavy_check_mark: [Certificate link](https://geekbrains.ru/certificates/1132651.en)
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; • *[Java 2](src/main/java/Java2/)* :heavy_check_mark:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; • *[Java 2](src/main/java/Java2/)* :heavy_check_mark: [Certificate link](https://geekbrains.ru/certificates/1182191.en)
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; • *[Java 3](src/main/java/Java2/)* :bullettrain_side:
 

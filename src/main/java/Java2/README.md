@@ -1,13 +1,13 @@
 # Geek Java 2
 
-### Homework
+### It was about:
 
-[Lesson one](LessonOne/)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *1.Exceptions*
 
-[Lesson two](LessonTwo/)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *2.Oop*
 
-[Lesson three](LessonThree/)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *3.Collections*
 
-[Lesson four](LessonFour/)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *4.Multithreading*
 
 ### [Link to certificate: (You will jump to certification link)](https://geekbrains.ru/certificates/1182191.en) 

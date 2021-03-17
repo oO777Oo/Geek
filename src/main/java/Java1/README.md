@@ -1,19 +1,13 @@
 ## Geek Java 1
 
-### Homework
+It was about:
 
-[Lesson one](src/main/java/Java1/firstLesson/Main.java)
-
-[Lesson two](src/main/java/Java1/secondLesson/Main.java)
-
-[Lesson three](src/main/java/Java1/thirdLesson/Main.java)
-
-[Lesson four](src/main/java/Java1/fourthLesson/Main.java)
-
-[Lesson five](src/main/java/Java1/fifthLesson/)
-
-[Lesson six](src/main/java/Java1/LessonSix/)
-
-[Lesson seven](src/main/java/Java1/LessonSeven/)
+1.Arrays
+2.Methods
+3.Conditions
+4.Data Types and Variables
+5.Loops
+6.OOP
+7.General Questions
 
 ### [Link to certificate: (You will jump to certification link)](https://geekbrains.ru/certificates/1132651.en) 

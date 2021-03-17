@@ -21,8 +21,15 @@ ___
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; • [HTML&CSS Certificate: (You will jump to certification link)](https://geekbrains.ru/certificates/1177908.en)
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; • *[HTML&CSS Project Link](https://vladislav-port.000webhostapp.com/index.html)*
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; • *[HTML&CSS Project link](https://vladislav-port.000webhostapp.com/index.html)*
 
 ---
 
+### &nbsp; &nbsp; &nbsp; &nbsp; *Database* :mortar_board:
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; • *[Certificate link](https://geekbrains.ru/certificates/1099906.en)* :heavy_check_mark:
+
+### &nbsp; &nbsp; &nbsp; &nbsp; *Computer Network* :mortar_board:
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; • *[Certificate link](https://geekbrains.ru/certificates/1149752.en)* :heavy_check_mark:
 

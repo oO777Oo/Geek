@@ -8,7 +8,10 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
+
+// TODO Implement methods in interface and not in class.
 public class MyConsoleChat implements Runnable {
     private final String DB = "chat";
     private final MySqlClass sqlClass = new MySqlClass(true);
@@ -125,14 +128,24 @@ public class MyConsoleChat implements Runnable {
         }
     }
 
+    // TODO Registration
     private void registration() {
 
     }
 
+    // TODO actions for chatOption
     private void chatOption() {
         System.out.println("Hi " + this.user.getNickName() + " You are in your chat menu:");
         System.out.println("1. Home, 2. UnreadMessages, 3. Write a Message, 4. Settings, 5. Quit");
+    }
 
+    // TODO return list of unread messages
+    private List<String> unreadMessages() {
+        return null;
+    }
+
+    // TODO implement method write message
+    private void writeMessage() {
 
     }
 

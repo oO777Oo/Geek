@@ -31,15 +31,13 @@ public class SQL {
     public SQL(boolean type) {
         if (type) {
             this.root = "root";
-            this.password = "!Integral9625";
+            this.password = "qwerty";
         }
     }
     public String getRoot() {
         return this.root;
     }
-
     public String getPassword() {
         return this.password;
     }
-
 }

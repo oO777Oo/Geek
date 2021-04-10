@@ -11,6 +11,7 @@ public class Chat implements Chatable, Runnable {
     private final Connection connection = this.database.getConnect();
     private final BufferedReader consoleInput = new BufferedReader(new InputStreamReader(System.in));
     private String step = null;
+    private String message;
     private User user = null;
 
     public Chat() { }
@@ -91,7 +92,20 @@ public class Chat implements Chatable, Runnable {
 
     @Override
     public void changeNick() {
-
+        System.out.println("Do you want to change your nick name? (y/n)");
+        try {
+            String query = "UPDATE users SET nick_name ";
+            this.step = this.consoleInput.readLine();
+            if (this.step.equalsIgnoreCase("y")) {
+                System.out.println("Insert new nick name: ");
+                this.step = this.consoleInput.readLine();
+                query += this.step + "WHERE user =" + this.user.getName();
+                PreparedStatement statement = this.connection.prepareStatement(query);
+                statement.execute();
+            }
+        } catch (IOException | SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -174,7 +188,7 @@ public class Chat implements Chatable, Runnable {
             e.printStackTrace();
         }
     }
-
+    /* TO DO next homework */
     @Override
     public void checkMessages() {
 
@@ -182,7 +196,17 @@ public class Chat implements Chatable, Runnable {
 
     @Override
     public void writeMessage() {
-
+        System.out.println("Insert user name whom you want to send a message?");
+        try {
+            this.step = this.consoleInput.readLine();
+            System.out.println("Insert your message:");
+            this.message = this.consoleInput.readLine();
+            /**
+             * Some logic to send message to another user:
+             * */
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 

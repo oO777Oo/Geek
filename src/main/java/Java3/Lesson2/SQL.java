@@ -31,7 +31,7 @@ public class SQL {
     public SQL(boolean type) {
         if (type) {
             this.root = "root";
-            this.password = "qwerty";
+            this.password = "!Integral9625";
         }
     }
     public String getRoot() {

@@ -1,10 +1,9 @@
 package Java3.Lesson2;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.sql.*;
+
 
 public class Chat implements Chatable, Runnable {
     private final MySqlClass database = new MySqlClass(true);
@@ -14,12 +13,13 @@ public class Chat implements Chatable, Runnable {
     private String message;
     private User user = null;
 
-    public Chat() { }
+    public Chat() {
+    }
 
     private void start() {
         /* The most important part of the program!
-        * It's start the program and you need to choose LogIn or LogOut
-        * after you are redirected to menu(); */
+         * It's start the program and you need to choose LogIn or LogOut
+         * after you are redirected to menu(); */
         this.test();
         System.out.println("Hi user!(login/register)");
         while (this.user == null) {
@@ -68,11 +68,12 @@ public class Chat implements Chatable, Runnable {
 
     private void menu() {
         /* Is Menu of the program always after some actions you are heir again!
-        * If you want to exit you need to type logout! */
-        while(!this.step.equalsIgnoreCase("out")) {
+         * If you want to exit you need to type logout! */
+        while (!this.step.equalsIgnoreCase("out")) {
             switch (this.step.toLowerCase()) {
                 case "checkmessages":
-                    checkMessages();
+                    System.out.println("Heir are your last messages:");
+                    System.out.println(checkMessages(this.user.getName()).toString());
                     break;
                 case "writemessage":
                     writeMessage();
@@ -184,31 +185,73 @@ public class Chat implements Chatable, Runnable {
             statement.setString(3, nickName);
             statement.execute();
             this.user = new User(newName, newPass, nickName);
+
         } catch (IOException | SQLException e) {
             e.printStackTrace();
         }
     }
+
     /* TO DO next homework */
     @Override
-    public void checkMessages() {
-
+    public StringBuilder checkMessages(String name) {
+        String path = "C:\\Users\\gaude\\Documents\\Git\\Geek\\src\\main\\java\\Java3\\Lesson2\\ConversationHistory\\" + name + ".txt";
+        StringBuilder history = new StringBuilder();
+        try {
+            File file = new File(path);
+            if(file.exists()) {
+                BufferedReader reader = new BufferedReader(new FileReader(path));
+                String message;
+                int counter = 0;
+                while ((message = reader.readLine()) != null && counter < 100) {
+                    history.append(message);
+                    counter++;
+                }
+            } else {
+                return new StringBuilder("");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return history;
     }
 
     @Override
     public void writeMessage() {
         System.out.println("Insert user name whom you want to send a message?");
+        StringBuilder query = new StringBuilder("SELECT user FROM users where user ='");
+        String name = null;
+        Writer writer = null;
         try {
             this.step = this.consoleInput.readLine();
-            System.out.println("Insert your message:");
-            this.message = this.consoleInput.readLine();
-            /**
-             * Some logic to send message to another user:
-             * */
-        } catch (IOException e) {
+            query.append(this.step).append("'");
+            ResultSet dataSet = this.connection.createStatement().executeQuery(query.toString());
+            while (dataSet.next()) {
+                name = dataSet.getString("user");
+            }
+            if (this.step.equalsIgnoreCase(name)) {
+                String path = "C:\\Users\\gaude\\Documents\\Git\\Geek\\src\\main\\java\\Java3\\Lesson2\\ConversationHistory\\" + name + ".txt";
+                System.out.println("Insert your message:");
+                StringBuilder history = this.checkMessages(name);
+                this.message = this.consoleInput.readLine();
+                String finallyMessage = this.user.getName() + ": " + this.message + "\n" + history.toString() + "\n";
+                writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), StandardCharsets.UTF_8));
+                writer.append(finallyMessage);
+            } else {
+                System.out.println("This person with nick " + name + "doesn't exist!");
+            }
+        } catch (IOException | SQLException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                if (writer != null) {
+                    writer.close();
+                }
+            } catch (IOException exception) {
+                exception.printStackTrace();
+            }
+
         }
     }
-
 
     @Override
     public void run() {

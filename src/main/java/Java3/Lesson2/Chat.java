@@ -3,12 +3,16 @@ package Java3.Lesson2;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.sql.*;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 
-public class Chat implements Chatable, Runnable {
+public class Chat implements Chatable, Callable {
     private final MySqlClass database = new MySqlClass(true);
     private final Connection connection = this.database.getConnect();
     private final BufferedReader consoleInput = new BufferedReader(new InputStreamReader(System.in));
+    ExecutorService executorService = Executors.newFixedThreadPool(2);
     private String step = null;
     private String message;
     private User user = null;
@@ -254,7 +258,8 @@ public class Chat implements Chatable, Runnable {
     }
 
     @Override
-    public void run() {
+    public Object call() {
         start();
+        return null;
     }
 }

@@ -1,6 +1,6 @@
 package Java3.Lesson2;
 
-public interface Chatable extends Runnable {
+public interface Chatable {
     void logIn();
     void registerUser();
     StringBuilder checkMessages(String name);

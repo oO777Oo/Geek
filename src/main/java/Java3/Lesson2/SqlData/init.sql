@@ -1,0 +1,1 @@
+create table if not exists users(user char(200) not null primary key, password  char(20)  not null, nick_name char(20)  not null, constraint users_user_uindex unique (user));
